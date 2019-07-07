@@ -1,0 +1,12 @@
+Requirments:
+
+
+1. To be able to delete a product;
+2. To be able to edit a product;
+3. Create warehouses
+4.Create stock quantities
+5. Create stock receipts
+6. Settings
+7. Profile 
+7.1 Add my company as administrator
+7.2 Create new user with access to my company;

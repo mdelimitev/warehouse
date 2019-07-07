@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/assets/css/mde-reset.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="/assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <title>Login</title>
+    </head>
+    <body class="flex-container-rw"  > 
+
+        <form class="my_form login" action="" method="post"> 
+            <h2 >Welcome back. Please sign in.</h2>
+            <div>
+                    <label for="username">Username</label>
+                    <div class ="fields_input">
+                        <input type="text"  name ="username"  placeholder="e-mail" id="username">
+                        <img class="form_img" src="/assets/icons/user.svg" alt="">
+                    </div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <div class ="fields_input">
+                    <input type="password" name="password"  placeholder="enter password" id="password">
+                    <img class="form_img" src="/assets/icons/lock.svg" alt="">
+                </div>
+            </div>
+                <div class="actions">
+                    <input type="submit" name="login" value="Login"> 
+                    <a href="/forgot"> I forgot my password</a>
+                </div>
+            <div class="account">
+                <p>Create a new account <a href="/signup">here</a>.</p>
+            </div>
+            <div class="contact">
+                <p>If you need any other help, please contact the helpdesk.</p>
+            </div>
+        </form>
+    </body>
+</html>

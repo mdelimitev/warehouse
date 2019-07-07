@@ -1,0 +1,224 @@
+html {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+@supports (display: flex) {  
+   
+  
+  .flex-container-rw {
+    background-image: url("/assets/pics/hexagonal-pattern_1051-833.jpg");
+    background-repeat: repeat;
+    margin:0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Login Page and forms */
+
+  .my_form {
+    margin-top: 20px;
+    width: 90%;
+    border:1px solid #848484;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #95e2cf;
+  }
+
+  .my_form>h2{
+    padding: 10px;
+    color: #95e2cf;
+    width: 100%;
+    background-color: #848484;
+    text-align: center;
+    
+  }
+
+  .my_form>div {
+    margin:2px;
+    padding:2px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .my_form>div.actions {
+    justify-content: space-around;
+    height: auto;
+  }
+
+  .my_form>div>label{
+    width:30%;
+  }
+  .fields_input {
+    width:60%;
+  }
+
+
+  .my_form>div>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .form_img {
+    height: 1rem;
+  }
+
+  .my_form>div.actions>input {
+    background-color: #00ffd3;
+    border-radius: 3px;
+    padding: 2px;
+  }
+
+  .my_form>div.account , .my_form>div.contact  { 
+    height: auto;
+    justify-content: center;
+    border-top:1px solid #848484;
+    background-color: #95e2cf
+  }
+
+
+  .my_form>div.account>p>a {
+    color:#a2a3a6;
+    justify-content: center;
+  }
+
+  .my_form>div.contact>p{
+    text-align: center;  }
+
+  .fields_input>input {
+    padding-left:0;
+    border:1px solid #848484;
+    border-radius: 3px;
+  }
+
+
+ 
+
+
+
+  nav{
+    height: 3rem;
+    width: 100%;
+    background-color: #848484;
+    padding:0;
+    margin-top:0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    overflow: visible;
+  }
+
+  nav>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    padding:0.5rem;
+    margin:0.5rem;
+    border: 1px solid palevioletred;
+  }
+
+  nav>div>a>img {
+    height: 2.5rem;
+  }
+
+
+  .user{
+    justify-content: flex-end;
+   
+  }
+
+  .user>a>img {
+    border: 1px solid black;
+    height:2.5rem;;
+    border:1px solid #a2a3a6;
+    border-radius:50%;
+  }
+
+  body>div {
+    width: 100%;
+    height:3rem;
+    border-bottom: 1px solid black;
+    background-color: #D3F3EB;
+    color:#848484;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body>div:hover{
+  background-color: #95e2cf;
+  }
+
+  div>a>img{
+    margin-left: 5px;
+    height: 40px;
+  }
+
+} 
+
+
+table {
+
+  margin:20px;
+  width: 70%;
+  table-layout: auto;
+  border: 1px solid #848484;
+  border-collapse: collapse;
+  
+}
+
+thead {
+  background-color: #848484;
+}
+
+
+tbody {
+  background-color: #D3F3EB;
+}
+
+tr,td {
+  border:1px solid #848484;
+  padding:5px;
+}
+
+
+.trans {
+  transition: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+
+
+#edit {
+  position:fixed;
+  top:100px;
+  width:300px;
+  height: 200px;
+  background-color: #D3F3EB;
+  margin: 0 auto;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  z-index: 1;
+
+}
+
+
+
+
+ 
+  
+  

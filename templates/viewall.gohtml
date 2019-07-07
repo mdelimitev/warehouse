@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+            <link rel="stylesheet" href="/assets/css/mde-reset.css">
+            <link rel="stylesheet" href="/assets/css/main.css">
+            <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_package_v0.16/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_package_v0.16/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_package_v0.16/favicon-16x16.png">
+            <link rel="manifest" href="/assets/favicon_package_v0.16/site.webmanifest">
+            <link rel="mask-icon" href="/assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="theme-color" content="#ffffff">
+            <title>ViewAll</title>
+    </head>
+    <body class="flex-container-rw">
+        <nav>
+            <div>
+                <a   href="/settings">
+                    <img  src="/assets/icons/settings.svg">
+                </a>  
+                <a   href="/home">
+                    <img  src="/assets/icons/home.svg">
+                </a>  
+
+            </div>  
+            <div class="user">
+                <a   href="/settings">
+                    <img  src="/assets/pics/martin.jpeg">
+                </a>
+            </div>
+                
+        </nav>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Code</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{range .}}
+                <tr>
+                    <td>{{.Id}}</td>
+                    <td>{{.Name}}</td>
+                    <td>{{.Code}}</td>
+                    <td><a  class="edit" href="#">Edit</a></td>
+                </tr>
+                {{end}}
+            <tbody>
+        </table>
+
+        
+        <form  id="edit" class="modal"  method="post"> 
+            <div>
+                <label for="fields_input-ip">Id:</label>
+                <input type="text" name="editId"       id="editId"
+                        value="id"
+                        readonly />      
+            </div>    
+            <div class="fields_input">
+                <label for="mname">Name:</label>
+                <input   type="text" name="mname" id="editName" required autofocus>
+            </div>
+            <div class="fields_input">
+                <label for="code">Code:</label>
+                <input  type="text" name="mcode" id="editCode" required autofocus>
+            </div>
+                     
+            <div class="actions">
+                <input  class="trans" type="submit"  name="submit" value="Submit"> 
+            </div>
+        </form>
+     
+
+
+    </body>
+    <script src="/assets/js/main.js"> </script>
+</html>
